@@ -14,7 +14,7 @@
   }
 
   function clearInputField() {
-    document.getElementsByClassName("search")[0].value = "";
+    searchInput.value = "";
   }
 
   async function getImages() {
