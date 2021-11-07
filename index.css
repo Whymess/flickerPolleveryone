@@ -1,0 +1,35 @@
+body {
+  background-color: gainsboro;
+  height: 900px;
+}
+
+.application-container {
+  height: 100%;
+}
+
+.search {
+  height: 50px;
+}
+
+.submit {
+  height: 50px;
+}
+
+.application-container-squares {
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: repeat(10, 150px);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+
+.photo {
+  position: relative;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+}
