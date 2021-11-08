@@ -22,14 +22,14 @@ body {
   grid-row-gap: 20px;
   grid-column-gap: 20px;
 }
-
 .photo {
   position: relative;
 }
-.centered {
+.centered-number {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: white;
+  font-size: 25px;
+  color: red;
   transform: translate(-50%, -50%);
 }

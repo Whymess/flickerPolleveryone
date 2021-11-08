@@ -32,7 +32,7 @@
           return `
             <div class="photo"> 
                 <img src=${`https://live.staticflickr.com/${server}/${id}_${secret}_q.jpg`}/>
-                <div class="centered">${views}</div>
+                <div class="centered-number">${views}</div>
           </div>
         `;
         })
