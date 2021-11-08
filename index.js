@@ -3,7 +3,7 @@
 
   function onChange() {
     const searchTerm = this.value;
-    endPoint = `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=4e258a4396bf5ba0448b2e2fe574034e&per_page=100&format=json&text=${searchTerm}&nojsoncallback=1`;
+    endPoint = `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=4e258a4396bf5ba0448b2e2fe574034e&per_page=100&format=json&text=${searchTerm}&nojsoncallback=1&extras=tags,views`;
   }
 
   async function onSubmit() {
@@ -28,11 +28,11 @@
       photo &&
       photo
         .map((el) => {
-          let { secret, server, id } = el;
+          let { secret, server, id, views } = el;
           return `
             <div class="photo"> 
                 <img src=${`https://live.staticflickr.com/${server}/${id}_${secret}_q.jpg`}/>
-                <div class="centered">Centered</div>
+                <div class="centered">${views}</div>
           </div>
         `;
         })
